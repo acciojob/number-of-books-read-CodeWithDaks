@@ -1,3 +1,5 @@
+
+
 const library = [
   {
     author: "Bill Gates",
@@ -15,11 +17,21 @@ const library = [
     readingStatus: false,
   },
 ];
-
+ 
 const numberOfBooksRead = () => {
   // write your code here
+	    // write your code here
+    let count=0;
+      library.forEach((i)=>{
+       if(i.readingStatus===true)
+       {
+         count++;
+       }
+      })
+      return count;
+ 
 };
-
+ 
 // Do not change the code below
-
+ 
 alert(numberOfBooksRead());
